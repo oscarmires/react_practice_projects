@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import products from "./data/products.json";
 
@@ -10,38 +11,52 @@ function App() {
 }
 
 function SearchArea() {
+    const results = products;
+    const [searchTerm, setSearchTerm] = useState("");
+
     return (
         <div className="SearchArea">
             <h1>React Searchbar</h1>
-            <SearchBar />
-            <ResultsArea />
+            <SearchBar typingHandler={setSearchTerm} />
+            <ResultsArea
+                results={results.filter((result) =>
+                    result.name.toLowerCase().includes(searchTerm.toLowerCase())
+                )}
+            />
         </div>
     );
 }
 
-function SearchBar() {
+function SearchBar({ typingHandler }) {
     return (
         <input
             className="SearchBar"
             type="text"
             placeholder="Search..."
+            onChange={(event) => {
+                typingHandler(event.target.value);
+            }}
         ></input>
     );
 }
 
-function ResultsArea() {
+function ResultsArea({ results }) {
     return (
         <div className="ResultsArea">
-            <Card />
+            {results.map((product, key) => (
+                <Card key={key} {...product} />
+            ))}
         </div>
     );
 }
 
-function Card() {
+function Card({ name, sku, price }) {
     return (
         <div className="Card">
-            <h2>This is a product</h2>
-            <p>SKU: ###### | Price: $#####</p>
+            <h2>{name}</h2>
+            <p>
+                SKU: {sku} | Price: {price}
+            </p>
         </div>
     );
 }
