@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Wireless Bluetooth Headphones",
+        "sku": "WBH-001",
+        "price": 79.99
+    },
+    {
+        "name": "Smartphone Case",
+        "sku": "SPC-002",
+        "price": 19.99
+    },
+    {
+        "name": "USB-C Charging Cable",
+        "sku": "UCC-003",
+        "price": 12.99
+    },
+    {
+        "name": "Portable Power Bank",
+        "sku": "PPB-004",
+        "price": 49.99
+    },
+    {
+        "name": "Smart Watch",
+        "sku": "SMW-005",
+        "price": 199.99
+    },
+    {
+        "name": "Wireless Mouse",
+        "sku": "WLM-006",
+        "price": 29.99
+    },
+    {
+        "name": "Laptop Backpack",
+        "sku": "LBP-007",
+        "price": 59.99
+    },
+    {
+        "name": "Noise-Canceling Earbuds",
+        "sku": "NCE-008",
+        "price": 149.99
+    },
+    {
+        "name": "Webcam",
+        "sku": "WBC-009",
+        "price": 69.99
+    },
+    {
+        "name": "Bluetooth Speaker",
+        "sku": "BTS-010",
+        "price": 89.99
+    }
+]
