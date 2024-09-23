@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: darken(var(--primary-color), 15%);
+}
+
+button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 3rem;
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: darken(var(--primary-color), 10%);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.form-container {
+    width: 600px;
+    margin: 0 auto;
+    background-color: bisque;
+    padding: 1.5rem;
+}
+
+.form-field {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    font-size: 18px;
+    border: 0;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.form-field:focus {
+    border: 0;
+    border-bottom: 3px solid rgb(35, 152, 255);
+    background-color: aliceblue;
+    outline: none;
+}
+
+.success-alert {
+    width: 100%;
+    background-color: rgb(0, 169, 0);
+    border-bottom: 2px solid rgb(0, 114, 0);
+    color: white;
+    height: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+}
