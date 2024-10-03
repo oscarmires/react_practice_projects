@@ -19,23 +19,8 @@ export default function Navbar() {
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">
+                        <a href="/useReducer" className="nav-link">
                             useReducer
-                        </a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">
-                            Pricing
-                        </a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">
-                            FAQs
-                        </a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">
-                            About
                         </a>
                     </li>
                 </ul>
