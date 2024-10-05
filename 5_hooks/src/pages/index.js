@@ -4,8 +4,8 @@ import ThemedCard from "../components/ThemedCard";
 export default function Home() {
     return (
         <>
-            <h1>Home</h1>
-            <h2>
+            <h1 className="mb-4">React Hooks</h1>
+            <h2 id="useReducer">
                 <code>useReducer()</code>
             </h2>
             <div className="row mt-3">
@@ -21,7 +21,7 @@ export default function Home() {
                     </p>
                 </div>
             </div>
-            <h2>
+            <h2 id="useContext">
                 <code>useContext()</code>
             </h2>
             <div className="row mt-3">
