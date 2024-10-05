@@ -1,4 +1,5 @@
 import Counter from "../components/Counter";
+import ThemedCard from "../components/ThemedCard";
 
 export default function Home() {
     return (
@@ -13,10 +14,24 @@ export default function Home() {
                 </div>
                 <div className="col-sm-6">
                     <p>
-                        This counter works using a reducer. Instead of the value
-                        of the input element being a state from the{" "}
-                        <code>useState()</code> hook, it was defined using{" "}
+                        This counter works using a reducer. Instead of the state
+                        of the input element coming from the{" "}
+                        <code>useState()</code> hook, it was defined with{" "}
                         <code>useReducer()</code>.
+                    </p>
+                </div>
+            </div>
+            <h2>
+                <code>useContext()</code>
+            </h2>
+            <div className="row mt-3">
+                <div className="col-sm-6">
+                    <ThemedCard />
+                </div>
+                <div className="col-sm-6">
+                    <p>
+                        This card uses a context provider to toggle between
+                        themes.
                     </p>
                 </div>
             </div>
