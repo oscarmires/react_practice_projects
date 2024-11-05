@@ -1,3 +1,4 @@
+import Carousel from "../components/Carousel";
 import Counter from "../components/Counter";
 import ThemedCard from "../components/ThemedCard";
 
@@ -33,6 +34,17 @@ export default function Home() {
                         This card uses a context provider to toggle between
                         themes.
                     </p>
+                </div>
+            </div>
+            <h2 id="useRef">
+                <code>useRef()</code>
+            </h2>
+            <div className="row mt-3">
+                <div className="col-sm-6">
+                    <Carousel />
+                </div>
+                <div className="col-sm-6">
+                    <p>This component uses refs to scroll between images.</p>
                 </div>
             </div>
         </>

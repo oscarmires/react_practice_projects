@@ -5,7 +5,7 @@ export default function ThemedCard() {
     const { theme, toggleTheme } = useContext(ThemeContext);
 
     return (
-        <div className="card" data-bs-theme={theme}>
+        <div className="card mb-4" data-bs-theme={theme}>
             <div className="card-header">Themed card</div>
             <div className="card-body">
                 <div className="form-check form-switch">

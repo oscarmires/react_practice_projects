@@ -23,6 +23,11 @@ export default function Navbar() {
                             useContext
                         </a>
                     </li>
+                    <li className="nav-item">
+                        <a href="#useRef" className="nav-link">
+                            useRef
+                        </a>
+                    </li>
                 </ul>
             </header>
         </div>
