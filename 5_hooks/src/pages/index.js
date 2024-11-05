@@ -1,5 +1,6 @@
 import Carousel from "../components/Carousel";
 import Counter from "../components/Counter";
+import CountrySearch from "../components/CountrySearch";
 import ThemedCard from "../components/ThemedCard";
 
 export default function Home() {
@@ -44,7 +45,24 @@ export default function Home() {
                     <Carousel />
                 </div>
                 <div className="col-sm-6">
-                    <p>This component uses refs to scroll between images.</p>
+                    <p>
+                        This component uses refs to DOM nodes generated with{" "}
+                        <code>useRef()</code> to scroll between images.
+                    </p>
+                </div>
+            </div>
+            <h2 id="useEffect">
+                <code>useEffect()</code>
+            </h2>
+            <div className="row mt-3 mb-4">
+                <div className="col-sm-6">
+                    <CountrySearch />
+                </div>
+                <div className="col-sm-6">
+                    <p>
+                        This component uses <code>useEffect()</code> to download
+                        data from the REST Countries API.
+                    </p>
                 </div>
             </div>
         </>

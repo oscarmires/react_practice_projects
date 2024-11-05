@@ -28,6 +28,11 @@ export default function Navbar() {
                             useRef
                         </a>
                     </li>
+                    <li className="nav-item">
+                        <a href="#useEffect" className="nav-link">
+                            useEffect
+                        </a>
+                    </li>
                 </ul>
             </header>
         </div>
